@@ -32,7 +32,7 @@ public class AdvancementScreenshotMod implements ModInitializer {
 
 	public static void tick() {
 		if (--screenshotTimer == 0) {
-			ScreenshotRecorder.saveScreenshot(client.runDirectory, client.getFramebuffer(), message -> client.execute(() -> client.inGameHud.getChatHud().addMessage((Text)message)));
+			ScreenshotRecorder.saveScreenshot(client.runDirectory, client.getFramebuffer(), message -> client.execute(() -> client.inGameHud.setOverlayMessage(message, false)));
 		}
 	}
 }
