@@ -34,7 +34,7 @@ public class AdvancementScreenshotMod implements ModInitializer {
 		if (--screenshotTimer == 0) {
 			ScreenshotUtils.saveScreenshot(client.runDirectory, client.getWindow().getFramebufferHeight(), client.getWindow().getFramebufferWidth(), client.getFramebuffer(), (text) -> {
 				client.execute(() -> {
-					client.inGameHud.getChatHud().addMessage(text);
+					client.inGameHud.getChatHud();
 				});
 			});
 		}
