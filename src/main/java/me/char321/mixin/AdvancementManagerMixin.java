@@ -4,7 +4,6 @@ import me.char321.AdvancementScreenshotMod;
 import net.minecraft.client.MinecraftClient;
 import net.minecraft.client.network.ClientAdvancementManager;
 import net.minecraft.client.toast.ToastManager;
-import net.minecraft.client.util.ScreenshotRecorder;
 import net.minecraft.text.Text;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
